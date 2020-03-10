@@ -1,2 +1,3 @@
 # moviesentiment
-movie review sentiment analysis project
+This Repository is for ISTA 498 Capstone Project
+Project : Movie review sentiment analysis
