@@ -1,8 +1,7 @@
-# moviesentiment
-This Repository is for ISTA 498 Capstone Project
-Project : Movie review sentiment analysis
-cs_sentiment.py train the model
-new_review.py get the postive rate
-
-reviews should be store in review folder
-##one review one file
+#movie review sentiment#
+<br>This Repository is for ISTA 498 Capstone Project
+<br>Project : Movie review sentiment analysis
+<br>cs_sentiment.py train the model
+<br>new_review.py get the postive rate
+<br>reviews should be store in review folder
+##one review one file##
