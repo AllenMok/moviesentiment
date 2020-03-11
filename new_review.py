@@ -18,9 +18,11 @@ def main():
     #open the files in review
     path = os.getcwd()
     file_list=os.listdir(path)
-    file_list.remove('.DS_Store')
-    file_list.remove('new')
-
+    if '.DS_Store' in file_list:
+        file_list.remove('.DS_Store')
+    if 'new' in file_list:
+        file_list.remove('new')
+    file_list.sort()
     predict_result = []
     for fn in file_list:
         areview  = open(fn)
@@ -28,6 +30,10 @@ def main():
         result = grid_search.predict(areview)
         #print out result of prediction
         predict_result.append(result[0])
+        if result[0]==1:
+            print(fn+": pos")
+        else:
+            print(fn+": neg")
     print("Positive Rate = "+str(sum(predict_result)/len(predict_result)))
 
 if __name__ == '__main__':
